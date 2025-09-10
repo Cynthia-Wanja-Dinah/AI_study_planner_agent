@@ -1,6 +1,0 @@
-flask
-google-generativeai
-python-dotenv
-requests
-duckduckgo-search
-gunicorn
