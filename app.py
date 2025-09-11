@@ -4,8 +4,7 @@ import google.generativeai as genai
 
 # Get the absolute path for the templates folder
 # This is a more robust way to handle the templates path
-templates_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../templates'))
-app = Flask(__name__, template_folder=templates_dir)
+app = Flask(__name__)  # Flask automatically looks for 'templates/' in the same folder
 
 # Configure Gemini API
 gemini_api_key = os.getenv("GEMINI_API_KEY")
